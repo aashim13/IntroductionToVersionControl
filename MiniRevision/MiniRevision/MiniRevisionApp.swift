@@ -8,10 +8,18 @@
 import SwiftUI
 
 @main
-struct MiniRevisionApp: App {
+struct StudyStackApp: App {
+    
+    // 1. Create the DataManager instance once and keep it alive
+    // @StateObject ensures the object persists for the life of the app.
+    @StateObject var dataManager = DataManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // 2. Inject the manager into the environment
+            HomeView()
+                .environmentObject(dataManager) // Makes it available to HomeView and all subviews
+                //.tint(.green)
         }
     }
 }
