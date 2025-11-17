@@ -39,7 +39,7 @@ class DataManager: ObservableObject {
             Flashcard(question: "What is the name of Harry Potter’s owl?", questionImageName: "square.stack.3d.up.fill", answer: "Hedwig"),
             Flashcard(question: "Who was the Half-Blood Prince?", questionImageName: "lasso.and.sparkles", answer: "Severus Snape"),
             Flashcard(question: "What position does Harry play on his Quidditch team?", questionImageName: nil, answer: "Seeker"),
-            Flashcard(question: "What is the name of the three-headed dog guarding the Philosopher’s Stone?", questionImageName: nil, answer: "Seeker")
+            Flashcard(question: "What is the name of the three-headed dog guarding the Philosopher’s Stone?", questionImageName: nil, answer: "Fluffy")
         ]
         
         let algebraCards: [Flashcard] = [

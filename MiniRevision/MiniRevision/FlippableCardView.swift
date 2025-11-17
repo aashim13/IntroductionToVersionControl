@@ -59,9 +59,9 @@ struct FlippableCardView: View {
             }
             .padding(40)
             .frame(maxWidth: .infinity, maxHeight: 400) // Fixed size for the card area
-            .background(Color(.systemBackground))
+            .background(.ultraThinMaterial)
             .cornerRadius(20)
-            .shadow(radius: 5)
+            .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)
             .padding()
         }
     

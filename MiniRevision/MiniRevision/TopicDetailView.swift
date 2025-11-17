@@ -123,7 +123,7 @@ struct TopicDetailView: View {
     private func addNewFlashcard() {
         if let index = dataManager.topics.firstIndex(where: { $0.id == topic.id }) {
             // Create the new card with default text
-            let newCard = Flashcard(question: "Tap to Edit Question", answer: "Tap to Edit Answer")
+            let newCard = Flashcard(question: "", answer: "")
             
             // Add it to the DataManager
             dataManager.topics[index].flashcards.append(newCard)
